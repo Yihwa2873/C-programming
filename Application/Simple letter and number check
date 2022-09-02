@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+  char n;
+  int m, c = 0;
+  
+  printf("Q1. 영어 모음을 1개 입력하면?(50점): ");
+  scanf("%c", &n);
+   printf("Q2. 올해 년도는?(50점): ");
+  scanf("%d", &m);
+  if(n == 'a' || n == 'e' || n == 'i' || n == 'o' || n == 'u')
+  {
+    printf("Q1 정답\n");
+    c = c + 50;
+  }
+else
+  {
+    printf("Q1 오답\n");
+  }
+  if(m == 2022)
+  {
+    printf("Q2 정답\n");
+    c = c + 50;
+  }
+else
+  {
+    printf("Q2 오답\n");
+  }
+  printf("총점 = %d\n", c);
+  return 0;
+}
